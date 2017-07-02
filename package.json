@@ -1,7 +1,7 @@
 {
   "name": "Fido",
   "version": "1.0.0",
-  "description": "Project Fido",
+  "description": "Project Fido dependencies and packages",
   "main": "index.js",
   "author": "Amit Schandillia",
   "license": "MIT",
