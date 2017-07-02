@@ -1,0 +1,11 @@
+{
+  "name": "Fido",
+  "version": "1.0.0",
+  "description": "Project Fido",
+  "main": "index.js",
+  "author": "Amit Schandillia",
+  "license": "MIT",
+  "dependencies": {
+    "map-reverse": "^1.0.1"
+  }
+}
