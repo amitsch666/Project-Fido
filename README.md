@@ -117,7 +117,7 @@
     `mygit "<commit message>"`
 
 
-
+### Set up git ssh: https://devmarketer.io/learn/set-ssh-key-github/
 
 ## Copyright and License
 Code and documentation copyright 2016-2017 Amit Schandillia and Project Panda. Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
