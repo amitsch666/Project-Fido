@@ -40,9 +40,9 @@ app.use(passport.session());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
 app.use('/api', api);
 app.use('/api/users', users);
+app.use('/*', index);
 
 // Configure Passport
 const User = require('./models/user');
