@@ -6,8 +6,10 @@
     "start": "node ./bin/www",
     "test": "jest",
     "lint": "eslint './bin/*' './app.js' './src/**/*' './*.config.js'",
+    "prod": "NODE_ENV=production webpack -p",
     "build-dev": "webpack --config webpack.config.js --progress --profile --colors"
   },
+  "author": "Amit Schandillia",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.25.0",
@@ -16,6 +18,7 @@
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.8",
     "ejs": "^2.5.6",
