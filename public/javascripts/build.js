@@ -25860,7 +25860,7 @@ function HomePage() {
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'col-sm-12 col-lg-8' },
-      'This is the home page.'
+      'This is the home page. Yayyyy!'
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__shared_Sidebar__["a" /* default */], null)
   );
