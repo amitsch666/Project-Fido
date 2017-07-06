@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Sidebar from '../shared/Sidebar';
 
 export default function ProfilePage(props) {

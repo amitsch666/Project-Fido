@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Template from './components/Template';
 import 'bootstrap/dist/css/bootstrap.css';
+import Template from './components/Template';
 
 render(
   <Template headline="Test Headline" />,
