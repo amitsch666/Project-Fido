@@ -1,12 +1,16 @@
-const path = require('path');
+const { resolve } = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: {
-    'javascripts/build.js': './src/index.jsx',
-  },
+  context: resolve(__dirname, 'src'),
+  entry: [
+    './index.jsx',
+  ],
   output: {
-    filename: '[name]',
-    path: path.join(__dirname, 'public'),
+    filename: 'javascripts/build.js',
+    path: resolve(__dirname, 'public'),
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -18,6 +22,16 @@ module.exports = {
         exclude: /(node_modules|bower_components|public\/)/,
         loader: 'babel-loader',
       },
+      {
+        test: /.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader',
+        }),
+      },
     ],
   },
+  plugins: [
+    new ExtractTextPlugin('stylesheets/style.css'),
+  ],
 };

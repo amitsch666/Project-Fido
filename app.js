@@ -6,6 +6,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+
 const index = require('./routes/index');
 const api = require('./routes/api/index');
 const users = require('./routes/api/users');
@@ -23,7 +24,6 @@ const LocalStrategy = require('passport-local').Strategy;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicons', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
