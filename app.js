@@ -14,7 +14,7 @@ const users = require('./routes/api/users');
 const app = express();
 
 // Connect Mongoose
-mongoose.connect('mongodb://localhost/musiclist');
+mongoose.connection.openUri('mongodb://localhost/musiclist');
 
 // Connect Passport
 const passport = require('passport');
