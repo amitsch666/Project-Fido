@@ -9316,4 +9316,17 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important;
   }
-}
+}header {
+  margin-bottom: 1rem; }
+
+.form-control::-webkit-input-placeholder {
+  color: #EEE; }
+
+.form-control::-moz-placeholder {
+  color: #EEE; }
+
+.form-control:-ms-input-placeholder {
+  color: #EEE; }
+
+.form-control:-moz-placeholder {
+  color: #EEE; }
